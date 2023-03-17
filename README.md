@@ -1,7 +1,10 @@
 # 🎢 BankRider, the fun of financial turmoil
 An interactive bookmarklet that helps you turns stock charts into Line Rider tracks! 📈
 
-Drag and drop Bank Rider into your Bookmarks now!
+## How to use
+1. Go onto the [website](https://bank-rider.vercel.app/)
+2. Drag and drop Bank Rider into your bookmarks
+3. Play Line Rider 
 
 ## Key features
 
