@@ -37,7 +37,49 @@
     <title>Bank Rider</title>
   </head>
 
-  <body>
+  <body style="padding-top: 0px;">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
+      >
+          {
+          "symbols": [
+            {
+              "description": "Silvergate",
+              "proName": "NYSE:SI"
+            },
+            {
+              "description": "Sillicon Valley Bank",
+              "proName": "NASDAQ:SIVB"
+            },
+            {
+              "description": "Signature Bank",
+              "proName": "NASDAQ:SBNY"
+            },
+            {
+              "description": "First Republic",
+              "proName": "NYSE:FRC"
+            },
+            {
+              "description": "Credit Suisse",
+              "proName": "NYSE:CS"
+            }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "light",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+
     <header>
       <nav>
         <a href="https://andybrewer.github.io/"></a>
@@ -61,11 +103,10 @@
     </header>
     <main>
       <hr />
-      
 
       <section>
         <header>
-            <h2>Example with Credit Suisse</h2>
+          <h2>Example with Credit Suisse</h2>
         </header>
         <iframe
           width="640"

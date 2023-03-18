@@ -19,10 +19,9 @@ const tradingViewWidgetScript = document.createElement('script')
 tradingViewWidgetScript.innerHTML = `
 setTimeout(function() {
 
-    new TradingView.widget({
+    const widget = new TradingView.widget({
         "width": "100%",
         "height": "100%",
-
         "symbol": "NYSE:CS",
         "interval": "D",
         "timezone": "Etc/UTC",
@@ -32,8 +31,15 @@ setTimeout(function() {
         "toolbar_bg": "#f1f3f6",
         "enable_publishing": false,
         "allow_symbol_change": true,
-        "container_id": "tradingview_ee0a7"
+        "container_id": "tradingview_ee0a7",
+        "studies": [
+          ["compare", {"inputs": {"symbols": "NYSE:CS,NASDAQ:NVDA"}}]
+        ]
       });
+
+      window.widget = widget;
+      console.log(widget);
+     
 
 
 }, 1000);
