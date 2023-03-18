@@ -1,7 +1,7 @@
 const widgetContainer = document.createElement('div')
 widgetContainer.innerHTML = `
 <div class="tradingview-widget-container">
-  <div id="tradingview_ee0a7"></div>
+  <div id="tradingview_ce506"></div>
   <div class="tradingview-widget-copyright">
     <a href="https://www.tradingview.com/symbols/NYSE-CS/" rel="noopener" target="_blank">
       <span class="blue-text">CS chart</span>
@@ -19,26 +19,31 @@ const tradingViewWidgetScript = document.createElement('script')
 tradingViewWidgetScript.innerHTML = `
 setTimeout(function() {
 
-    const widget = new TradingView.widget({
-        "width": "100%",
-        "height": "100%",
-        "symbol": "NYSE:CS",
-        "interval": "D",
-        "timezone": "Etc/UTC",
-        "theme": "light",
-        "style": "2",
-        "locale": "en",
-        "toolbar_bg": "#f1f3f6",
-        "enable_publishing": false,
-        "allow_symbol_change": true,
-        "container_id": "tradingview_ee0a7",
-        "studies": [
-          ["compare", {"inputs": {"symbols": "NYSE:CS,NASDAQ:NVDA"}}]
-        ]
-      });
+  new TradingView.widget(
+    {
+      "width": "100%",
+      "height": "100%",
+    "symbol": "NYSE:CS",
+    "timezone": "Etc/UTC",
+    "theme": "light",
+    "style": "2",
+    "locale": "en",
+    "toolbar_bg": "#f1f3f6",
+    "enable_publishing": false,
+    "withdateranges": true,
+    "range": "5D",
+    "allow_symbol_change": true,
+    "watchlist": [
+      "NYSE:SI",
+      "NASDAQ:SIVB",
+      "NASDAQ:SBNY",
+      "NYSE:FRC",
+      "NYSE:CS"
+    ],
+    "container_id": "tradingview_ce506"
+  }
+    );
 
-      window.widget = widget;
-      console.log(widget);
      
 
 
