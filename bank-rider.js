@@ -32,7 +32,7 @@ setTimeout(function() {
     {
       "width": "100%",
       "height": "100%",
-    "symbol": "NYSE:CS",
+    "symbol": "NYSE:DB",
     "timezone": "Etc/UTC",
     "theme": "light",
     "style": "2",
@@ -47,7 +47,8 @@ setTimeout(function() {
       "NASDAQ:SIVB",
       "NASDAQ:SBNY",
       "NYSE:FRC",
-      "NYSE:CS"
+      "NYSE:CS",
+      "NYSE:DB"
     ],
     "container_id": "tradingview_ce506"
   }
