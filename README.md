@@ -2,7 +2,7 @@
 An interactive bookmarklet that helps you turns stock charts into Line Rider tracks! 📈
 
 ## How to use
-1. Go onto the [website](https://bank-rider.vercel.app/)
+1. Go onto the [website](https://bank-rider.tiborudvari.com/)
 2. Drag and drop Bank Rider into your bookmarks
 3. Play Line Rider 
 
