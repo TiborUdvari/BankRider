@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://bank-rider.tiborudvari.com/$1",
+      "statusCode": 301
+    }
+  ]
+}
